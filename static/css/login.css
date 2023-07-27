@@ -1,0 +1,44 @@
+h2{
+    color: purple;
+}
+
+form{
+    border : 2px solid red;
+    margin-top:50px;
+    margin-bottom:250px;
+    margin-left:450px;
+    margin-right:450px;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color: white;
+    border-radius:2%
+
+}
+
+input[type=text],[type=password]
+{
+    padding:10px 15px;
+    display:inline-block;
+    border : 1px solid;
+    box-sizing: border-box;
+    border-radius:5%;
+    background-color: blue;
+    color: white;
+}
+
+input[type=submit]
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:none;
+    cursor:pointer;
+    width:50%;
+}
+
+.container{
+    background-color: #ffa500;
+}

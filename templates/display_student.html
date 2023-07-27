@@ -1,0 +1,37 @@
+{% extends 'navbar/adminnavbar.html' %}
+
+{% block title %}
+Display Data
+{% endblock %}
+
+{% block content %}
+
+<h2 align="center"></h2>
+<table align="center" border="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phno</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Course</th>
+        <th>Fees</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        {% for i in data %}
+        <td>{{i.id}}</td>
+        <td>{{i.Stud_name}}</td>
+        <td>{{i.Stud_phno}}</td>
+        <td>{{i.Stud_email}}</td>
+        <td>{{i.Stud_city}}</td>
+        <td>{{i.Stud_course}}</td>
+        <td>{{i.Stud_fees}}</td>
+        <td><a href="{% url 'update' i.id %}">Update</a></td>
+        <td><a href="{% url 'del' i.id %}">Delete</a></td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endblock%}
